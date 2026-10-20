@@ -127,6 +127,24 @@ omarchy-shell io.github.chivopic.github-heatmap refresh
 
 ---
 
+## 📦 依赖要求 (Dependencies)
+
+- **Python 3**：用于后台数据解析与本地缓存（内置标准库，无需额外 pip 包）。
+- **GitHub CLI (`gh`)** *(可选，推荐)*：登录后可无限制调用 GraphQL API 并包含私有仓库授权提交。若未安装，插件自动降级至公开数据源。
+- **Nerd Font**：Omarchy 默认自带（用于显示 Octocat 图标 `󰊤`）。
+
+---
+
+## 🗑️ 卸载 (Removal)
+
+如需从 Omarchy 状态栏与系统中彻底移除此插件：
+
+```bash
+omarchy plugin remove io.github.chivopic.github-heatmap --yes
+```
+
+---
+
 ## 📄 开源许可 (License)
 
 本项目基于 [MIT](LICENSE) 许可证开源。
