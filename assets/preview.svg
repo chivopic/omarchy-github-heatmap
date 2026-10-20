@@ -1,0 +1,1384 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="920" viewBox="0 0 1600 920">
+<defs>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&amp;display=swap');
+    text { font-family: 'JetBrainsMono Nerd Font', 'Noto Sans CJK SC', 'Noto Sans', sans-serif; }
+    .title { font-size: 15px; font-weight: 700; fill: #f0f6fc; }
+    .sub { font-size: 11px; fill: #8b949e; }
+    .label { font-size: 10px; fill: #8b949e; }
+    .val { font-size: 14px; font-weight: 700; fill: #58a6ff; }
+    .unit { font-size: 9px; fill: #8b949e; }
+  </style>
+
+  <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#090d13" />
+    <stop offset="50%" stop-color="#0d1117" />
+    <stop offset="100%" stop-color="#161b22" />
+  </linearGradient>
+
+  <linearGradient id="glow" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#238636" stop-opacity="0.25" />
+    <stop offset="100%" stop-color="#238636" stop-opacity="0.0" />
+  </linearGradient>
+
+  <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="125%">
+    <feDropShadow dx="0" dy="16" stdDeviation="24" flood-color="#000000" flood-opacity="0.65" />
+    <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000000" flood-opacity="0.4" />
+  </filter>
+
+  <filter id="hoverGlow" x="-20%" y="-20%" width="140%" height="140%">
+    <feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#39d353" flood-opacity="0.8" />
+  </filter>
+
+  <clipPath id="avatarClip">
+    <circle cx="20" cy="20" r="19" />
+  </clipPath>
+</defs>
+
+<!-- Background -->
+<rect width="1600" height="920" fill="url(#bgGrad)" />
+
+<!-- Background ambient grid pattern -->
+<g opacity="0.06">
+
+<line x1="0" y1="0" x2="0" y2="920" stroke="#ffffff" stroke-width="1" />
+<line x1="40" y1="0" x2="40" y2="920" stroke="#ffffff" stroke-width="1" />
+<line x1="80" y1="0" x2="80" y2="920" stroke="#ffffff" stroke-width="1" />
+<line x1="120" y1="0" x2="120" y2="920" stroke="#ffffff" stroke-width="1" />
+<line x1="160" y1="0" x2="160" y2="920" stroke="#ffffff" stroke-width="1" />
+<line x1="200" y1="0" x2="200" y2="920" stroke="#ffffff" stroke-width="1" />
+<line x1="240" y1="0" x2="240" y2="920" stroke="#ffffff" stroke-width="1" />
+<line x1="280" y1="0" x2="280" y2="920" stroke="#ffffff" stroke-width="1" />
+<line x1="320" y1="0" x2="320" y2="920" stroke="#ffffff" stroke-width="1" />
+<line x1="360" y1="0" x2="360" y2="920" stroke="#ffffff" stroke-width="1" />
+<line x1="400" y1="0" x2="400" y2="920" stroke="#ffffff" stroke-width="1" />
+<line x1="440" y1="0" x2="440" y2="920" stroke="#ffffff" stroke-width="1" />
+<line x1="480" y1="0" x2="480" y2="920" stroke="#ffffff" stroke-width="1" />
+<line x1="520" y1="0" x2="520" y2="920" stroke="#ffffff" stroke-width="1" />
+<line x1="560" y1="0" x2="560" y2="920" stroke="#ffffff" stroke-width="1" />
+<line x1="600" y1="0" x2="600" y2="920" stroke="#ffffff" stroke-width="1" />
+<line x1="640" y1="0" x2="640" y2="920" stroke="#ffffff" stroke-width="1" />
+<line x1="680" y1="0" x2="680" y2="920" stroke="#ffffff" stroke-width="1" />
+<line x1="720" y1="0" x2="720" y2="920" stroke="#ffffff" stroke-width="1" />
+<line x1="760" y1="0" x2="760" y2="920" stroke="#ffffff" stroke-width="1" />
+<line x1="800" y1="0" x2="800" y2="920" stroke="#ffffff" stroke-width="1" />
+<line x1="840" y1="0" x2="840" y2="920" stroke="#ffffff" stroke-width="1" />
+<line x1="880" y1="0" x2="880" y2="920" stroke="#ffffff" stroke-width="1" />
+<line x1="920" y1="0" x2="920" y2="920" stroke="#ffffff" stroke-width="1" />
+<line x1="960" y1="0" x2="960" y2="920" stroke="#ffffff" stroke-width="1" />
+<line x1="1000" y1="0" x2="1000" y2="920" stroke="#ffffff" stroke-width="1" />
+<line x1="1040" y1="0" x2="1040" y2="920" stroke="#ffffff" stroke-width="1" />
+<line x1="1080" y1="0" x2="1080" y2="920" stroke="#ffffff" stroke-width="1" />
+<line x1="1120" y1="0" x2="1120" y2="920" stroke="#ffffff" stroke-width="1" />
+<line x1="1160" y1="0" x2="1160" y2="920" stroke="#ffffff" stroke-width="1" />
+<line x1="1200" y1="0" x2="1200" y2="920" stroke="#ffffff" stroke-width="1" />
+<line x1="1240" y1="0" x2="1240" y2="920" stroke="#ffffff" stroke-width="1" />
+<line x1="1280" y1="0" x2="1280" y2="920" stroke="#ffffff" stroke-width="1" />
+<line x1="1320" y1="0" x2="1320" y2="920" stroke="#ffffff" stroke-width="1" />
+<line x1="1360" y1="0" x2="1360" y2="920" stroke="#ffffff" stroke-width="1" />
+<line x1="1400" y1="0" x2="1400" y2="920" stroke="#ffffff" stroke-width="1" />
+<line x1="1440" y1="0" x2="1440" y2="920" stroke="#ffffff" stroke-width="1" />
+<line x1="1480" y1="0" x2="1480" y2="920" stroke="#ffffff" stroke-width="1" />
+<line x1="1520" y1="0" x2="1520" y2="920" stroke="#ffffff" stroke-width="1" />
+<line x1="1560" y1="0" x2="1560" y2="920" stroke="#ffffff" stroke-width="1" />
+<line x1="0" y1="0" x2="1600" y2="0" stroke="#ffffff" stroke-width="1" />
+<line x1="0" y1="40" x2="1600" y2="40" stroke="#ffffff" stroke-width="1" />
+<line x1="0" y1="80" x2="1600" y2="80" stroke="#ffffff" stroke-width="1" />
+<line x1="0" y1="120" x2="1600" y2="120" stroke="#ffffff" stroke-width="1" />
+<line x1="0" y1="160" x2="1600" y2="160" stroke="#ffffff" stroke-width="1" />
+<line x1="0" y1="200" x2="1600" y2="200" stroke="#ffffff" stroke-width="1" />
+<line x1="0" y1="240" x2="1600" y2="240" stroke="#ffffff" stroke-width="1" />
+<line x1="0" y1="280" x2="1600" y2="280" stroke="#ffffff" stroke-width="1" />
+<line x1="0" y1="320" x2="1600" y2="320" stroke="#ffffff" stroke-width="1" />
+<line x1="0" y1="360" x2="1600" y2="360" stroke="#ffffff" stroke-width="1" />
+<line x1="0" y1="400" x2="1600" y2="400" stroke="#ffffff" stroke-width="1" />
+<line x1="0" y1="440" x2="1600" y2="440" stroke="#ffffff" stroke-width="1" />
+<line x1="0" y1="480" x2="1600" y2="480" stroke="#ffffff" stroke-width="1" />
+<line x1="0" y1="520" x2="1600" y2="520" stroke="#ffffff" stroke-width="1" />
+<line x1="0" y1="560" x2="1600" y2="560" stroke="#ffffff" stroke-width="1" />
+<line x1="0" y1="600" x2="1600" y2="600" stroke="#ffffff" stroke-width="1" />
+<line x1="0" y1="640" x2="1600" y2="640" stroke="#ffffff" stroke-width="1" />
+<line x1="0" y1="680" x2="1600" y2="680" stroke="#ffffff" stroke-width="1" />
+<line x1="0" y1="720" x2="1600" y2="720" stroke="#ffffff" stroke-width="1" />
+<line x1="0" y1="760" x2="1600" y2="760" stroke="#ffffff" stroke-width="1" />
+<line x1="0" y1="800" x2="1600" y2="800" stroke="#ffffff" stroke-width="1" />
+<line x1="0" y1="840" x2="1600" y2="840" stroke="#ffffff" stroke-width="1" />
+<line x1="0" y1="880" x2="1600" y2="880" stroke="#ffffff" stroke-width="1" />
+</g>
+
+<!-- Top bar mock -->
+<g transform="translate(150, 40)">
+  <rect width="1300" height="42" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1" />
+  
+  <!-- Left items -->
+  <text x="20" y="26" font-size="14" fill="#f0f6fc">󰣇</text>
+  <text x="45" y="26" font-size="12" fill="#8b949e">Omarchy</text>
+
+  <!-- Right items -->
+  <g transform="translate(930, 0)">
+    <!-- Tray / Status icons -->
+    <text x="20" y="26" font-size="13" fill="#8b949e">󰍛 280Hz</text>
+    <text x="100" y="26" font-size="13" fill="#8b949e">󰤨</text>
+    <text x="130" y="26" font-size="13" fill="#8b949e">󰂯</text>
+    <text x="160" y="26" font-size="13" fill="#8b949e">󰕾</text>
+
+    <!-- Heatmap Bar Widget Pill (Active Highlighted) -->
+    <g transform="translate(195, 6)">
+      <rect width="90" height="30" rx="6" fill="#21262d" stroke="#58a6ff" stroke-width="1.5" />
+      <text x="16" y="20" font-size="14" fill="#39d353">󰊤</text>
+      <text x="36" y="20" font-size="12" font-weight="700" fill="#f0f6fc">33</text>
+      <!-- Small active dot underneath -->
+      <circle cx="45" cy="34" r="2.5" fill="#58a6ff" />
+    </g>
+
+    <!-- Next icon (Muyu) -->
+    <text x="305" y="26" font-size="14" fill="#8b949e">🪷</text>
+    <text x="335" y="26" font-size="13" fill="#8b949e">21:00</text>
+  </g>
+</g>
+
+
+<!-- PopupCard Container -->
+<g transform="translate(320, 115)" filter="url(#cardShadow)">
+  <!-- Card Background -->
+  <rect width="960" height="420" rx="14" fill="#12161c" stroke="#30363d" stroke-width="1.5" />
+  
+  <!-- Subtle header aura -->
+  <rect x="1" y="1" width="958" height="100" rx="14" fill="url(#glow)" />
+
+  <!-- 1. Header Row -->
+  <g transform="translate(26, 24)">
+    <!-- Avatar -->
+    <g transform="translate(0, 0)">
+      <circle cx="22" cy="22" r="22" fill="#21262d" stroke="#30363d" stroke-width="1" />
+      <g transform="translate(2, 2)">
+        <image href="data:image/jpeg;base64,/9j/2wCEAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDIBCQkJDAsMGA0NGDIhHCEyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMv/AABEIAcwBzAMBIgACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/APn+iiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoorqNA+H3iTxJB5+n6e7QHpI/yqfoaAOXortNQ+FXi/TYXlk0uSRVGT5XzVx0kTwyFJEKupwQRgigBlFFFABRSqpY4UEn2rqdA+HXibxEFez06RYW6Syjah/GgDlaK77V/g74v0i2a4eyjuEUZP2Z95A+grgmUqxVgQRwQaAEooooAKKfFDJPKscSM7scKqjJJr0PSPg34j1C0S6ulhso35CzyBHx9DQB5zRXrcvwM1Awk22o2skvZTMoBrgfEHg/W/DE3l6nZSRKfuyAZRvoe9AGFRRV/TtF1PVpRHYWU9w5OMRoTQBQor1PQ/gtqcwWfX7iPTrbjPzjeB9DXRn4c/D2I+SdWmdhxvB6/rRcDwmiu2+IPgT/hEbuCWzla5025XdFMR37g4+oriaACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKsWNnPqF5FaW0ZkmlYKqgdSaAN/wP4SuvFmvw2sSMLdWDTSY4VRXtvijxYdH2aLobrDBbqELIPTtSmOz+HPgmLSLMgalcIGmcD5iT/nFefQwT6heKiK0ksjfiTSA39O8dazZziR7tpVzyr8g1valpHg74h22+5VNP1Uj/AFsfy7j79sVSv/hrqttp63EC+a+0Fo+ARXHz21zZyFZopInB6MCKLAUtf+DPiTS3MlhCNRtjyJISOBWxofwPuZbRLrXb1LJWGTFuAYD9at6Z4u1vTAFhu38sfwvyKqal4h1LVZmku7p2z/CDgD8KltgdjY2Hw/8AByL9ltY729j/AOWsvzNn+VUNU+Imp3RMVnttYR0WNcVy9lp93qUwS3hklY9lBNdZZfD2dIhcatcR2UPU73A4+tUkBN4J8Q6rceILeCe4aWOV8MG5AFeV/FeztbL4gajHaBVRm3sq9AxzkV6hdeM/BvgeCVNNlF9qSqQG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BRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAVZhv7q3OY5mHsTkVWooA3IPEk6YEsav6nNaEfiW1cAOjqfpxXJ0UAdtHrFi4H79QT2NTrdW0n3ZIzXBU4Ow6MfzoHdnoIWIjI8unAIOnl1575sn/PRvzo86T/no350BdnoBCnslMYxoMttFcF50v8Az0f/AL6oMsh6u350BzM7dtTsoeGuI1PpVObxBZITjc/+6K5Iknqc0lAN3Ohm8TN0hhA92NZ02s302QZioPZeKz6KBCszO25mJJ7mkoooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA//Z" width="40" height="40" clip-path="url(#avatarClip)" />
+      </g>
+    </g>
+
+    <!-- Name & Handle -->
+    <g transform="translate(56, 12)">
+      <text x="0" y="12" class="title">Zehong Chen</text>
+      <text x="105" y="12" class="sub">@chivopic</text>
+      <text x="0" y="28" class="sub">GitHub 提交活动看板 · 实时同步</text>
+    </g>
+
+    <!-- Stats Badges (Right side) -->
+    <g transform="translate(420, 2)">
+      <!-- Total -->
+      <g transform="translate(0, 0)">
+        <rect width="105" height="44" rx="8" fill="#1c2128" stroke="#30363d" stroke-width="1" />
+        <text x="12" y="22" class="val">571</text>
+        <text x="56" y="22" class="unit">次</text>
+        <text x="12" y="36" class="label">年度总提交</text>
+      </g>
+
+      <!-- Current Streak -->
+      <g transform="translate(115, 0)">
+        <rect width="105" height="44" rx="8" fill="#1c2128" stroke="#30363d" stroke-width="1" />
+        <text x="12" y="22" class="val" fill="#39d353">5</text>
+        <text x="32" y="22" class="unit">天</text>
+        <text x="12" y="36" class="label">当前连续</text>
+      </g>
+
+      <!-- Longest Streak -->
+      <g transform="translate(230, 0)">
+        <rect width="105" height="44" rx="8" fill="#1c2128" stroke="#30363d" stroke-width="1" />
+        <text x="12" y="22" class="val">15</text>
+        <text x="40" y="22" class="unit">天</text>
+        <text x="12" y="36" class="label">最长连续</text>
+      </g>
+
+      <!-- Today -->
+      <g transform="translate(345, 0)">
+        <rect width="90" height="44" rx="8" fill="#1c2128" stroke="#30363d" stroke-width="1" />
+        <text x="12" y="22" class="val" fill="#39d353">33</text>
+        <text x="36" y="22" class="unit">次</text>
+        <text x="12" y="36" class="label">今日提交</text>
+      </g>
+
+      <!-- Refresh button -->
+      <g transform="translate(445, 0)">
+        <rect width="44" height="44" rx="8" fill="#1c2128" stroke="#30363d" stroke-width="1" />
+        <text x="14" y="27" font-size="16" fill="#8b949e">󰑐</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Divider -->
+  <line x1="26" y1="92" x2="934" y2="92" stroke="#21262d" stroke-width="1" />
+
+  <!-- 2. Heatmap Section -->
+  <g transform="translate(32, 115)">
+    <!-- Month labels -->
+    <g transform="translate(36, 0)">
+
+<text x="16.5" y="0" font-size="11" fill="#8b949e">11月</text>
+<text x="99.0" y="0" font-size="11" fill="#8b949e">12月</text>
+<text x="165.0" y="0" font-size="11" fill="#8b949e">1月</text>
+<text x="247.5" y="0" font-size="11" fill="#8b949e">2月</text>
+<text x="313.5" y="0" font-size="11" fill="#8b949e">3月</text>
+<text x="379.5" y="0" font-size="11" fill="#8b949e">4月</text>
+<text x="445.5" y="0" font-size="11" fill="#8b949e">5月</text>
+<text x="528.0" y="0" font-size="11" fill="#8b949e">6月</text>
+<text x="594.0" y="0" font-size="11" fill="#8b949e">7月</text>
+<text x="660.0" y="0" font-size="11" fill="#8b949e">8月</text>
+<text x="742.5" y="0" font-size="11" fill="#8b949e">9月</text>
+<text x="808.5" y="0" font-size="11" fill="#8b949e">10月</text>
+    </g>
+
+    <!-- Grid Container -->
+    <g transform="translate(0, 16)">
+      <!-- Weekday Labels -->
+      <text x="6" y="28" font-size="10" fill="#8b949e">一</text>
+      <text x="6" y="62" font-size="10" fill="#8b949e">三</text>
+      <text x="6" y="96" font-size="10" fill="#8b949e">五</text>
+
+      <!-- Weeks matrix -->
+      <g transform="translate(36, 0)">
+
+
+        <rect x="0.0" y="0.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="0.0" y="16.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="0.0" y="33.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="0.0" y="49.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="0.0" y="66.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="0.0" y="82.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="0.0" y="99.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="16.5" y="0.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="16.5" y="16.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="16.5" y="33.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="16.5" y="49.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="16.5" y="66.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="16.5" y="82.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="16.5" y="99.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="33.0" y="0.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="33.0" y="16.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="33.0" y="33.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="33.0" y="49.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="33.0" y="66.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="33.0" y="82.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="33.0" y="99.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="49.5" y="0.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="49.5" y="16.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="49.5" y="33.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="49.5" y="49.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="49.5" y="66.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="49.5" y="82.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="49.5" y="99.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="66.0" y="0.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="66.0" y="16.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="66.0" y="33.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="66.0" y="49.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="66.0" y="66.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="66.0" y="82.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="66.0" y="99.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="82.5" y="0.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="82.5" y="16.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="82.5" y="33.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="82.5" y="49.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="82.5" y="66.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="82.5" y="82.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="82.5" y="99.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="99.0" y="0.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="99.0" y="16.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="99.0" y="33.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="99.0" y="49.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="99.0" y="66.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="99.0" y="82.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="99.0" y="99.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="115.5" y="0.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="115.5" y="16.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="115.5" y="33.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="115.5" y="49.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="115.5" y="66.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="115.5" y="82.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="115.5" y="99.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="132.0" y="0.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="132.0" y="16.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="132.0" y="33.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="132.0" y="49.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="132.0" y="66.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="132.0" y="82.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="132.0" y="99.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="148.5" y="0.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="148.5" y="16.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="148.5" y="33.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="148.5" y="49.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="148.5" y="66.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="148.5" y="82.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="148.5" y="99.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="165.0" y="0.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="165.0" y="16.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="165.0" y="33.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="165.0" y="49.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="165.0" y="66.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="165.0" y="82.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="165.0" y="99.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="181.5" y="0.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="181.5" y="16.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="181.5" y="33.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="181.5" y="49.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="181.5" y="66.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="181.5" y="82.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="181.5" y="99.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="198.0" y="0.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="198.0" y="16.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="198.0" y="33.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="198.0" y="49.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="198.0" y="66.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="198.0" y="82.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="198.0" y="99.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="214.5" y="0.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="214.5" y="16.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="214.5" y="33.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="214.5" y="49.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="214.5" y="66.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="214.5" y="82.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="214.5" y="99.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="231.0" y="0.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="231.0" y="16.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="231.0" y="33.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="231.0" y="49.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="231.0" y="66.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="231.0" y="82.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="231.0" y="99.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="247.5" y="0.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="247.5" y="16.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="247.5" y="33.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="247.5" y="49.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="247.5" y="66.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="247.5" y="82.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="247.5" y="99.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="264.0" y="0.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="264.0" y="16.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="264.0" y="33.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="264.0" y="49.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="264.0" y="66.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="264.0" y="82.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="264.0" y="99.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="280.5" y="0.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="280.5" y="16.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="280.5" y="33.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="280.5" y="49.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="280.5" y="66.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="280.5" y="82.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="280.5" y="99.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="297.0" y="0.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="297.0" y="16.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="297.0" y="33.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="297.0" y="49.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="297.0" y="66.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="297.0" y="82.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="297.0" y="99.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="313.5" y="0.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="313.5" y="16.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="313.5" y="33.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="313.5" y="49.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="313.5" y="66.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="313.5" y="82.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="313.5" y="99.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="330.0" y="0.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="330.0" y="16.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="330.0" y="33.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="330.0" y="49.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="330.0" y="66.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="330.0" y="82.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="330.0" y="99.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="346.5" y="0.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="346.5" y="16.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="346.5" y="33.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="346.5" y="49.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="346.5" y="66.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="346.5" y="82.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="346.5" y="99.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="363.0" y="0.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="363.0" y="16.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="363.0" y="33.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="363.0" y="49.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="363.0" y="66.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="363.0" y="82.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="363.0" y="99.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="379.5" y="0.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="379.5" y="16.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="379.5" y="33.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="379.5" y="49.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="379.5" y="66.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="379.5" y="82.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="379.5" y="99.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="396.0" y="0.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="396.0" y="16.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="396.0" y="33.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="396.0" y="49.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="396.0" y="66.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="396.0" y="82.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="396.0" y="99.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="412.5" y="0.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="412.5" y="16.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="412.5" y="33.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="412.5" y="49.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="412.5" y="66.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="412.5" y="82.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="412.5" y="99.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="429.0" y="0.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="429.0" y="16.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="429.0" y="33.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="429.0" y="49.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="429.0" y="66.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="429.0" y="82.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="429.0" y="99.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="445.5" y="0.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="445.5" y="16.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="445.5" y="33.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="445.5" y="49.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="445.5" y="66.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="445.5" y="82.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="445.5" y="99.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="462.0" y="0.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="462.0" y="16.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="462.0" y="33.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="462.0" y="49.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="462.0" y="66.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="462.0" y="82.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="462.0" y="99.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="478.5" y="0.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="478.5" y="16.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="478.5" y="33.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="478.5" y="49.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="478.5" y="66.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="478.5" y="82.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="478.5" y="99.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="495.0" y="0.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="495.0" y="16.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="495.0" y="33.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="495.0" y="49.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="495.0" y="66.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="495.0" y="82.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="495.0" y="99.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="511.5" y="0.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="511.5" y="16.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="511.5" y="33.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="511.5" y="49.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="511.5" y="66.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="511.5" y="82.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="511.5" y="99.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="528.0" y="0.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="528.0" y="16.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="528.0" y="33.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="528.0" y="49.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="528.0" y="66.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="528.0" y="82.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="528.0" y="99.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="544.5" y="0.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="544.5" y="16.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="544.5" y="33.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="544.5" y="49.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="544.5" y="66.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="544.5" y="82.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="544.5" y="99.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="561.0" y="0.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="561.0" y="16.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="561.0" y="33.0" width="13" height="13" rx="2.5" fill="#0e4429" />
+            
+
+        <rect x="561.0" y="49.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="561.0" y="66.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="561.0" y="82.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="561.0" y="99.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="577.5" y="0.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="577.5" y="16.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="577.5" y="33.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="577.5" y="49.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="577.5" y="66.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="577.5" y="82.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="577.5" y="99.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="594.0" y="0.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="594.0" y="16.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="594.0" y="33.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="594.0" y="49.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="594.0" y="66.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="594.0" y="82.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="594.0" y="99.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="610.5" y="0.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="610.5" y="16.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="610.5" y="33.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="610.5" y="49.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="610.5" y="66.0" width="13" height="13" rx="2.5" fill="#0e4429" />
+            
+
+        <rect x="610.5" y="82.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="610.5" y="99.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="627.0" y="0.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="627.0" y="16.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="627.0" y="33.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="627.0" y="49.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="627.0" y="66.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="627.0" y="82.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="627.0" y="99.0" width="13" height="13" rx="2.5" fill="#006d32" />
+            
+
+        <rect x="643.5" y="0.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="643.5" y="16.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="643.5" y="33.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="643.5" y="49.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="643.5" y="66.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="643.5" y="82.5" width="13" height="13" rx="2.5" fill="#006d32" />
+            
+
+        <rect x="643.5" y="99.0" width="13" height="13" rx="2.5" fill="#0e4429" />
+            
+
+        <rect x="660.0" y="0.0" width="13" height="13" rx="2.5" fill="#0e4429" />
+            
+
+        <rect x="660.0" y="16.5" width="13" height="13" rx="2.5" fill="#0e4429" />
+            
+
+        <rect x="660.0" y="33.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="660.0" y="49.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="660.0" y="66.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="660.0" y="82.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="660.0" y="99.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="676.5" y="0.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="676.5" y="16.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="676.5" y="33.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="676.5" y="49.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="676.5" y="66.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="676.5" y="82.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="676.5" y="99.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="693.0" y="0.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="693.0" y="16.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="693.0" y="33.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="693.0" y="49.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="693.0" y="66.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="693.0" y="82.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="693.0" y="99.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="709.5" y="0.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="709.5" y="16.5" width="13" height="13" rx="2.5" fill="#0e4429" />
+            
+
+        <rect x="709.5" y="33.0" width="13" height="13" rx="2.5" fill="#0e4429" />
+            
+
+        <rect x="709.5" y="49.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="709.5" y="66.0" width="13" height="13" rx="2.5" fill="#0e4429" />
+            
+
+        <rect x="709.5" y="82.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="709.5" y="99.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="726.0" y="0.0" width="13" height="13" rx="2.5" fill="#0e4429" />
+            
+
+        <rect x="726.0" y="16.5" width="13" height="13" rx="2.5" fill="#0e4429" />
+            
+
+        <rect x="726.0" y="33.0" width="13" height="13" rx="2.5" fill="#0e4429" />
+            
+
+        <rect x="726.0" y="49.5" width="13" height="13" rx="2.5" fill="#0e4429" />
+            
+
+        <rect x="726.0" y="66.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="726.0" y="82.5" width="13" height="13" rx="2.5" fill="#0e4429" />
+            
+
+        <rect x="726.0" y="99.0" width="13" height="13" rx="2.5" fill="#0e4429" />
+            
+
+        <rect x="742.5" y="0.0" width="13" height="13" rx="2.5" fill="#0e4429" />
+            
+
+        <rect x="742.5" y="16.5" width="13" height="13" rx="2.5" fill="#0e4429" />
+            
+
+        <rect x="742.5" y="33.0" width="13" height="13" rx="2.5" fill="#0e4429" />
+            
+
+        <rect x="742.5" y="49.5" width="13" height="13" rx="2.5" fill="#26a641" />
+            
+
+        <rect x="742.5" y="66.0" width="13" height="13" rx="2.5" fill="#0e4429" />
+            
+
+        <rect x="742.5" y="82.5" width="13" height="13" rx="2.5" fill="#0e4429" />
+            
+
+        <rect x="742.5" y="99.0" width="13" height="13" rx="2.5" fill="#006d32" />
+            
+
+        <rect x="759.0" y="0.0" width="13" height="13" rx="2.5" fill="#39d353" />
+            
+
+        <rect x="759.0" y="16.5" width="13" height="13" rx="2.5" fill="#006d32" />
+            
+
+        <rect x="759.0" y="33.0" width="13" height="13" rx="2.5" fill="#0e4429" />
+            
+
+        <rect x="759.0" y="49.5" width="13" height="13" rx="2.5" fill="#0e4429" />
+            
+
+        <rect x="759.0" y="66.0" width="13" height="13" rx="2.5" fill="#0e4429" />
+            
+
+        <rect x="759.0" y="82.5" width="13" height="13" rx="2.5" fill="#006d32" />
+            
+
+        <rect x="759.0" y="99.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="775.5" y="0.0" width="13" height="13" rx="2.5" fill="#0e4429" />
+            
+
+        <rect x="775.5" y="16.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="775.5" y="33.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="775.5" y="49.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="775.5" y="66.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="775.5" y="82.5" width="13" height="13" rx="2.5" fill="#0e4429" />
+            
+
+        <rect x="775.5" y="99.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="792.0" y="0.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="792.0" y="16.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="792.0" y="33.0" width="13" height="13" rx="2.5" fill="#0e4429" />
+            
+
+        <rect x="792.0" y="49.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="792.0" y="66.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="792.0" y="82.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="792.0" y="99.0" width="13" height="13" rx="2.5" fill="#0e4429" />
+            
+
+        <rect x="808.5" y="0.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="808.5" y="16.5" width="13" height="13" rx="2.5" fill="#0e4429" />
+            
+
+        <rect x="808.5" y="33.0" width="13" height="13" rx="2.5" fill="#0e4429" />
+            
+
+        <rect x="808.5" y="49.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="808.5" y="66.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="808.5" y="82.5" width="13" height="13" rx="2.5" fill="#0e4429" />
+            
+
+        <rect x="808.5" y="99.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="825.0" y="0.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="825.0" y="16.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="825.0" y="33.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="825.0" y="49.5" width="13" height="13" rx="2.5" fill="#0e4429" />
+            
+
+        <rect x="825.0" y="66.0" width="13" height="13" rx="2.5" fill="#0e4429" />
+            
+
+        <rect x="825.0" y="82.5" width="13" height="13" rx="2.5" fill="#006d32" />
+            
+
+        <rect x="825.0" y="99.0" width="13" height="13" rx="2.5" fill="#0e4429" />
+            
+
+        <rect x="841.5" y="0.0" width="13" height="13" rx="2.5" fill="#26a641" />
+            
+
+        <rect x="841.5" y="16.5" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="841.5" y="33.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="841.5" y="49.5" width="13" height="13" rx="2.5" fill="#0e4429" />
+            
+
+        <rect x="841.5" y="66.0" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+            
+
+        <rect x="841.5" y="82.5" width="13" height="13" rx="2.5" fill="#26a641" />
+            
+
+        <rect x="841.5" y="99.0" width="13" height="13" rx="2.5" fill="#0e4429" />
+            
+
+        <rect x="858.0" y="0.0" width="13" height="13" rx="2.5" fill="#39d353" />
+            
+
+        <rect x="858.0" y="16.5" width="13" height="13" rx="2.5" fill="#39d353" />
+            
+
+        <rect x="856.5" y="31.5" width="16" height="16" rx="3.5" fill="#26a641" stroke="#ffffff" stroke-width="1.8" filter="url(#hoverGlow)" />
+            
+      </g>
+    </g>
+  </g>
+
+  <!-- 3. Bottom Information & Legend Bar -->
+  <g transform="translate(32, 280)">
+    <!-- Hover / Status info -->
+    <text x="36" y="14" font-size="12" font-weight="700" fill="#39d353">2026-10-20 (今天) · 20 次提交贡献 · 保持连胜中 🔥</text>
+
+    <!-- Legend -->
+    <g transform="translate(680, 0)">
+      <text x="0" y="14" font-size="11" fill="#8b949e">少</text>
+      <rect x="22" y="2" width="13" height="13" rx="2.5" fill="rgba(255, 255, 255, 0.05)" />
+      <rect x="39" y="2" width="13" height="13" rx="2.5" fill="#0e4429" />
+      <rect x="56" y="2" width="13" height="13" rx="2.5" fill="#006d32" />
+      <rect x="73" y="2" width="13" height="13" rx="2.5" fill="#26a641" />
+      <rect x="90" y="2" width="13" height="13" rx="2.5" fill="#39d353" />
+      <text x="110" y="14" font-size="11" fill="#8b949e">多</text>
+    </g>
+  </g>
+
+  <!-- Divider -->
+  <line x1="26" y1="316" x2="934" y2="316" stroke="#21262d" stroke-width="1" />
+
+  <!-- 4. Footer Actions Bar -->
+  <g transform="translate(32, 336)">
+    <!-- GitHub Profile Button -->
+    <g transform="translate(36, 0)">
+      <rect width="240" height="34" rx="7" fill="#21262d" stroke="#30363d" stroke-width="1" />
+      <text x="18" y="22" font-size="15" fill="#f0f6fc"></text>
+      <text x="42" y="21" font-size="12" font-weight="600" fill="#f0f6fc">在浏览器中查看 GitHub 主页</text>
+    </g>
+
+    <!-- Active Days Badge -->
+    <g transform="translate(290, 0)">
+      <rect width="160" height="34" rx="7" fill="#161b22" stroke="#21262d" stroke-width="1" />
+      <text x="14" y="21" font-size="12" fill="#8b949e">年度活跃天数: <tspan fill="#f0f6fc" font-weight="600">47 天</tspan></text>
+    </g>
+
+    <!-- Updated timestamp -->
+    <text x="890" y="22" text-anchor="end" font-size="11" fill="#8b949e">上次同步: 2026-10-20 21:13:51</text>
+  </g>
+</g>
+</svg>

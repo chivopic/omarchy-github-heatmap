@@ -1,6 +1,10 @@
 # Omarchy GitHub Commit Heatmap · GitHub 提交热力图
 
 <p align="center">
+  <img src="assets/preview.png" alt="Omarchy GitHub Commit Heatmap Preview" width="100%" />
+</p>
+
+<p align="center">
   <a href="https://plugins.omarchy.org"><img src="https://img.shields.io/badge/Omarchy-plugin-orange?style=flat-square" alt="Omarchy plugin" /></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue?style=flat-square" alt="MIT License" /></a>
   <img src="https://img.shields.io/badge/Version-1.0.0-green?style=flat-square" alt="Version 1.0.0" />
