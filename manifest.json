@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.chivopic.github-heatmap",
+  "name": "GitHub Heatmap",
+  "version": "1.0.0",
+  "author": "chivopic",
+  "license": "MIT",
+  "description": "A beautiful GitHub commit heatmap and contribution tracker widget for the Omarchy status bar.",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "BarWidget.qml"
+  },
+  "barWidget": {
+    "displayName": "GitHub Heatmap",
+    "description": "Click to view your GitHub commit heatmap and streak statistics at any time.",
+    "category": "Development",
+    "aliases": ["github", "commits", "heatmap", "git", "contributions"],
+    "allowMultiple": false,
+    "defaultSection": "right",
+    "defaults": {
+      "showCount": true,
+      "countMode": "today",
+      "colorTheme": "github"
+    },
+    "schema": [
+      {
+        "key": "showCount",
+        "type": "boolean",
+        "label": "Show count on bar",
+        "description": "Display contribution count next to GitHub icon on the status bar.",
+        "defaultValue": true
+      },
+      {
+        "key": "countMode",
+        "type": "string",
+        "label": "Count mode",
+        "description": "Display today's commits or yearly total on the status bar.",
+        "defaultValue": "today"
+      },
+      {
+        "key": "colorTheme",
+        "type": "string",
+        "label": "Color theme",
+        "description": "Color theme for heatmap cells ('github' or 'accent').",
+        "defaultValue": "github"
+      }
+    ]
+  }
+}
