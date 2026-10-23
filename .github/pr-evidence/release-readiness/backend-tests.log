@@ -1,0 +1,8 @@
+test_offline_refresh_never_returns_another_users_cache (test_backend_cache.RefreshCacheTests.test_offline_refresh_never_returns_another_users_cache) ... ok
+test_offline_refresh_returns_same_users_cache_with_stale_status (test_backend_cache.RefreshCacheTests.test_offline_refresh_returns_same_users_cache_with_stale_status) ... ok
+test_successful_refresh_returns_fresh_data_without_stale_status (test_backend_cache.RefreshCacheTests.test_successful_refresh_returns_fresh_data_without_stale_status) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.002s
+
+OK

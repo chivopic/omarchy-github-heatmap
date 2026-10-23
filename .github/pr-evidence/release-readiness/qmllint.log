@@ -1,0 +1,288 @@
+Warning: BarWidget.qml:533:21: var declaration in block scope is hoisted to function scope
+Replace it with const or let to silence the warning
+ [block-scope-var-declaration]
+                var dStr = root.hoveredDay.date
+                    ^^^^
+Warning: BarWidget.qml:534:21: var declaration in block scope is hoisted to function scope
+Replace it with const or let to silence the warning
+ [block-scope-var-declaration]
+                var count = root.hoveredDay.count
+                    ^^^^^
+Warning: BarWidget.qml:535:21: var declaration in block scope is hoisted to function scope
+Replace it with const or let to silence the warning
+ [block-scope-var-declaration]
+                var countStr = count > 0 ? (count + " 次提交贡献") : "当天无提交记录"
+                    ^^^^^^^^
+Info: BarWidget.qml:5:1: Unused import [unused-imports]
+import qs.Commons as Commons
+^^^^^^
+Warning: BarWidget.qml:239:25: Unqualified access [unqualified]
+              visible: !avatarUrl || parent.children[0].status !== Image.Ready
+                        ^^^^^^^^^
+Info: avatarUrl is a member of a parent element.
+      You can qualify the access with its id to avoid this warning.
+
+Suggested change:
+              visible: !root.avatarUrl || parent.children[0].status !== Image.Ready
+                        ^^^^^
+Warning: BarWidget.qml:242:39: Member "family" not found on type "QObject" [missing-property]
+              font.family: Style.font.family
+                                      ^^^^^^
+Warning: BarWidget.qml:243:42: Member "heading" not found on type "QObject" [missing-property]
+              font.pixelSize: Style.font.heading
+                                         ^^^^^^^
+Warning: BarWidget.qml:258:41: Member "family" not found on type "QObject" [missing-property]
+                font.family: Style.font.family
+                                        ^^^^^^
+Warning: BarWidget.qml:259:44: Member "title" not found on type "QObject" [missing-property]
+                font.pixelSize: Style.font.title
+                                           ^^^^^
+Warning: BarWidget.qml:269:41: Member "family" not found on type "QObject" [missing-property]
+                font.family: Style.font.family
+                                        ^^^^^^
+Warning: BarWidget.qml:270:44: Member "caption" not found on type "QObject" [missing-property]
+                font.pixelSize: Style.font.caption
+                                           ^^^^^^^
+Warning: BarWidget.qml:277:39: Member "family" not found on type "QObject" [missing-property]
+              font.family: Style.font.family
+                                      ^^^^^^
+Warning: BarWidget.qml:278:42: Member "caption" not found on type "QObject" [missing-property]
+              font.pixelSize: Style.font.caption
+                                         ^^^^^^^
+Warning: BarWidget.qml:314:27: Unqualified access [unqualified]
+                    text: modelData.value
+                          ^^^^^^^^^
+Info: modelData is a member of a parent element.
+      You can qualify the access with its id to avoid this warning (You first have to give the element an id).
+
+Suggested change:
+                    text: <id>.modelData.value
+                          ^^^^^
+Warning: BarWidget.qml:316:45: Member "family" not found on type "QObject" [missing-property]
+                    font.family: Style.font.family
+                                            ^^^^^^
+Warning: BarWidget.qml:317:48: Member "body" not found on type "QObject" [missing-property]
+                    font.pixelSize: Style.font.body
+                                               ^^^^
+Warning: BarWidget.qml:323:27: Unqualified access [unqualified]
+                    text: modelData.unit
+                          ^^^^^^^^^
+Info: modelData is a member of a parent element.
+      You can qualify the access with its id to avoid this warning (You first have to give the element an id).
+
+Suggested change:
+                    text: <id>.modelData.unit
+                          ^^^^^
+Warning: BarWidget.qml:325:45: Member "family" not found on type "QObject" [missing-property]
+                    font.family: Style.font.family
+                                            ^^^^^^
+Warning: BarWidget.qml:332:25: Unqualified access [unqualified]
+                  text: modelData.label
+                        ^^^^^^^^^
+Info: modelData is a member of a parent element.
+      You can qualify the access with its id to avoid this warning (You first have to give the element an id).
+
+Suggested change:
+                  text: <id>.modelData.label
+                        ^^^^^
+Warning: BarWidget.qml:334:43: Member "family" not found on type "QObject" [missing-property]
+                  font.family: Style.font.family
+                                          ^^^^^^
+Warning: BarWidget.qml:335:46: Member "caption" not found on type "QObject" [missing-property]
+                  font.pixelSize: Style.font.caption - 1
+                                             ^^^^^^^
+Warning: BarWidget.qml:356:39: Member "family" not found on type "QObject" [missing-property]
+              font.family: Style.font.family
+                                      ^^^^^^
+Warning: BarWidget.qml:357:42: Member "title" not found on type "QObject" [missing-property]
+              font.pixelSize: Style.font.title
+                                         ^^^^^
+Warning: BarWidget.qml:405:23: Unqualified access [unqualified]
+                text: modelData.monthLabel || ""
+                      ^^^^^^^^^
+Info: modelData is a member of a parent element.
+      You can qualify the access with its id to avoid this warning (You first have to give the element an id).
+
+Suggested change:
+                text: <id>.modelData.monthLabel || ""
+                      ^^^^^
+Warning: BarWidget.qml:407:41: Member "family" not found on type "QObject" [missing-property]
+                font.family: Style.font.family
+                                        ^^^^^^
+Warning: BarWidget.qml:448:25: Unqualified access [unqualified]
+                  text: modelData.show ? modelData.name : ""
+                        ^^^^^^^^^
+Info: modelData is a member of a parent element.
+      You can qualify the access with its id to avoid this warning (You first have to give the element an id).
+
+Suggested change:
+                  text: <id>.modelData.show ? modelData.name : ""
+                        ^^^^^
+Warning: BarWidget.qml:448:42: Unqualified access [unqualified]
+                  text: modelData.show ? modelData.name : ""
+                                         ^^^^^^^^^
+Info: modelData is a member of a parent element.
+      You can qualify the access with its id to avoid this warning (You first have to give the element an id).
+
+Suggested change:
+                  text: modelData.show ? <id>.modelData.name : ""
+                                         ^^^^^
+Warning: BarWidget.qml:450:43: Member "family" not found on type "QObject" [missing-property]
+                  font.family: Style.font.family
+                                          ^^^^^^
+Warning: BarWidget.qml:469:26: Unqualified access [unqualified]
+                  model: modelData.days
+                         ^^^^^^^^^
+Info: modelData is a member of a parent element.
+      You can qualify the access with its id to avoid this warning (You first have to give the element an id).
+
+Suggested change:
+                  model: <id>.modelData.days
+                         ^^^^^
+Warning: BarWidget.qml:475:55: Unqualified access [unqualified]
+                    readonly property bool isHovered: root.hoveredDay && root.hoveredDay.date === modelData.date && !isEmpty
+                                                      ^^^^
+Info: Set "pragma ComponentBehavior: Bound" in order to use IDs from outer components in nested components.
+Suggested change:
+pragma ComponentBehavior: Bound
+import QtQuick
+Warning: BarWidget.qml:475:74: Unqualified access [unqualified]
+                    readonly property bool isHovered: root.hoveredDay && root.hoveredDay.date === modelData.date && !isEmpty
+                                                                         ^^^^
+Info: Set "pragma ComponentBehavior: Bound" in order to use IDs from outer components in nested components.
+Suggested change:
+pragma ComponentBehavior: Bound
+import QtQuick
+Warning: BarWidget.qml:480:54: Unqualified access [unqualified]
+                    color: isEmpty ? "transparent" : root.getCellColor(modelData.level, root.colorTheme === "accent")
+                                                     ^^^^
+Info: Set "pragma ComponentBehavior: Bound" in order to use IDs from outer components in nested components.
+Suggested change:
+pragma ComponentBehavior: Bound
+import QtQuick
+Warning: BarWidget.qml:480:89: Unqualified access [unqualified]
+                    color: isEmpty ? "transparent" : root.getCellColor(modelData.level, root.colorTheme === "accent")
+                                                                                        ^^^^
+Info: Set "pragma ComponentBehavior: Bound" in order to use IDs from outer components in nested components.
+Suggested change:
+pragma ComponentBehavior: Bound
+import QtQuick
+Warning: BarWidget.qml:494:33: Unqualified access [unqualified]
+                      enabled: !isEmpty
+                                ^^^^^^^
+Info: isEmpty is a member of a parent element.
+      You can qualify the access with its id to avoid this warning (You first have to give the element an id).
+
+Suggested change:
+                      enabled: !<id>.isEmpty
+                                ^^^^^
+Warning: BarWidget.qml:499:25: Unqualified access [unqualified]
+                        root.hoveredDay = modelData
+                        ^^^^
+Info: Set "pragma ComponentBehavior: Bound" in order to use IDs from outer components in nested components.
+Suggested change:
+pragma ComponentBehavior: Bound
+import QtQuick
+Warning: BarWidget.qml:499:43: Unqualified access [unqualified]
+                        root.hoveredDay = modelData
+                                          ^^^^^^^^^
+Info: modelData is a member of a parent element.
+      You can qualify the access with its id to avoid this warning (You first have to give the element an id).
+
+Suggested change:
+                        root.hoveredDay = <id>.modelData
+                                          ^^^^^
+Warning: BarWidget.qml:502:29: Unqualified access [unqualified]
+                        if (root.hoveredDay && root.hoveredDay.date === modelData.date) {
+                            ^^^^
+Info: Set "pragma ComponentBehavior: Bound" in order to use IDs from outer components in nested components.
+Suggested change:
+pragma ComponentBehavior: Bound
+import QtQuick
+Warning: BarWidget.qml:502:48: Unqualified access [unqualified]
+                        if (root.hoveredDay && root.hoveredDay.date === modelData.date) {
+                                               ^^^^
+Info: Set "pragma ComponentBehavior: Bound" in order to use IDs from outer components in nested components.
+Suggested change:
+pragma ComponentBehavior: Bound
+import QtQuick
+Warning: BarWidget.qml:502:73: Unqualified access [unqualified]
+                        if (root.hoveredDay && root.hoveredDay.date === modelData.date) {
+                                                                        ^^^^^^^^^
+Info: modelData is a member of a parent element.
+      You can qualify the access with its id to avoid this warning (You first have to give the element an id).
+
+Suggested change:
+                        if (root.hoveredDay && root.hoveredDay.date === <id>.modelData.date) {
+                                                                        ^^^^^
+Warning: BarWidget.qml:503:27: Unqualified access [unqualified]
+                          root.hoveredDay = null
+                          ^^^^
+Info: Set "pragma ComponentBehavior: Bound" in order to use IDs from outer components in nested components.
+Suggested change:
+pragma ComponentBehavior: Bound
+import QtQuick
+Warning: BarWidget.qml:507:25: Unqualified access [unqualified]
+                        root.openGithubProfile()
+                        ^^^^
+Info: Set "pragma ComponentBehavior: Bound" in order to use IDs from outer components in nested components.
+Suggested change:
+pragma ComponentBehavior: Bound
+import QtQuick
+Warning: BarWidget.qml:541:37: Member "family" not found on type "QObject" [missing-property]
+            font.family: Style.font.family
+                                    ^^^^^^
+Warning: BarWidget.qml:542:40: Member "caption" not found on type "QObject" [missing-property]
+            font.pixelSize: Style.font.caption
+                                       ^^^^^^^
+Warning: BarWidget.qml:557:37: Member "family" not found on type "QObject" [missing-property]
+            font.family: Style.font.family
+                                    ^^^^^^
+Warning: BarWidget.qml:558:40: Member "caption" not found on type "QObject" [missing-property]
+            font.pixelSize: Style.font.caption - 1
+                                       ^^^^^^^
+Warning: BarWidget.qml:569:22: Unqualified access [unqualified]
+              color: root.getCellColor(modelData, root.colorTheme === "accent")
+                     ^^^^
+Info: Set "pragma ComponentBehavior: Bound" in order to use IDs from outer components in nested components.
+Suggested change:
+pragma ComponentBehavior: Bound
+import QtQuick
+Warning: BarWidget.qml:569:51: Unqualified access [unqualified]
+              color: root.getCellColor(modelData, root.colorTheme === "accent")
+                                                  ^^^^
+Info: Set "pragma ComponentBehavior: Bound" in order to use IDs from outer components in nested components.
+Suggested change:
+pragma ComponentBehavior: Bound
+import QtQuick
+Warning: BarWidget.qml:577:37: Member "family" not found on type "QObject" [missing-property]
+            font.family: Style.font.family
+                                    ^^^^^^
+Warning: BarWidget.qml:578:40: Member "caption" not found on type "QObject" [missing-property]
+            font.pixelSize: Style.font.caption - 1
+                                       ^^^^^^^
+Warning: BarWidget.qml:610:39: Member "family" not found on type "QObject" [missing-property]
+              font.family: Style.font.family
+                                      ^^^^^^
+Warning: BarWidget.qml:611:42: Member "body" not found on type "QObject" [missing-property]
+              font.pixelSize: Style.font.body
+                                         ^^^^
+Warning: BarWidget.qml:618:39: Member "family" not found on type "QObject" [missing-property]
+              font.family: Style.font.family
+                                      ^^^^^^
+Warning: BarWidget.qml:619:42: Member "caption" not found on type "QObject" [missing-property]
+              font.pixelSize: Style.font.caption
+                                         ^^^^^^^
+Warning: BarWidget.qml:645:37: Member "family" not found on type "QObject" [missing-property]
+            font.family: Style.font.family
+                                    ^^^^^^
+Warning: BarWidget.qml:646:40: Member "caption" not found on type "QObject" [missing-property]
+            font.pixelSize: Style.font.caption - 1
+                                       ^^^^^^^
+Warning: BarWidget.qml:661:39: Member "family" not found on type "QObject" [missing-property]
+              font.family: Style.font.family
+                                      ^^^^^^
+Warning: BarWidget.qml:662:42: Member "caption" not found on type "QObject" [missing-property]
+              font.pixelSize: Style.font.caption
+                                         ^^^^^^^
+qmllint exit code: 0

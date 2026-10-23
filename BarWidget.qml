@@ -56,13 +56,44 @@ BarWidget {
   function applyData(raw) {
     isRefreshing = false
     try {
-      var parsed = JSON.parse(String(raw || ""))
-      if (parsed && typeof parsed === "object" && !parsed.error) {
+      const parsed = JSON.parse(String(raw || ""))
+      if (parsed && typeof parsed === "object" && parsed.username &&
+          (typeof parsed.totalContributions === "number" || parsed.error)) {
         summary = parsed
+        return !parsed.error && !parsed.stale
       }
     } catch (e) {
       console.warn("github-heatmap: failed to parse backend output: " + e)
     }
+    return false
+  }
+
+  function handleRefreshResult(raw) {
+    const fresh = applyData(raw)
+    let detail = ""
+    let hasStaleCache = false
+    try {
+      const parsed = JSON.parse(String(raw || ""))
+      if (parsed && parsed.error) detail = parsed.error
+      hasStaleCache = !!(parsed && parsed.stale)
+    } catch (e) {
+      detail = "无法读取后端返回的数据"
+    }
+
+    sendRefreshNotification(
+      fresh ? "low" : "normal",
+      fresh ? "已成功同步 @" + root.username + " 的最新提交记录"
+        : "同步失败" + (hasStaleCache ? "，正在显示 @" + root.username + " 的缓存" : "") +
+          (detail ? "：" + detail : "")
+    )
+  }
+
+  function sendRefreshNotification(urgency, message) {
+    Quickshell.execDetached([
+      "omarchy", "notification", "send",
+      "-g", root.octoGlyph, "-u", urgency, "-t", "3500",
+      "GitHub 贡献数据", message
+    ])
   }
 
   function fetchStatus() {
@@ -140,13 +171,8 @@ BarWidget {
     command: ["/usr/bin/python3", "-I", root.scriptPath, "refresh"]
     stdout: StdioCollector {
       waitForEnd: true
-      onStreamFinished: function(text) {
-        root.applyData(text)
-        Quickshell.execDetached([
-          "omarchy", "notification", "send",
-          "-g", root.octoGlyph, "-u", "low", "-t", "2500",
-          "GitHub 贡献数据", "已成功同步 @" + root.username + " 的最新提交记录"
-        ])
+      onStreamFinished: {
+        root.handleRefreshResult(text)
       }
     }
   }
@@ -225,16 +251,20 @@ BarWidget {
             Row {
               spacing: Style.space(6)
               Text {
+                id: profileNameText
                 text: root.displayName
+                textFormat: Text.PlainText
                 color: Color.foreground
                 font.family: Style.font.family
                 font.pixelSize: Style.font.title
                 font.bold: true
               }
               Text {
+                id: profileUsernameText
                 anchors.bottom: parent.bottom
                 anchors.bottomMargin: 1
                 text: "@" + root.username
+                textFormat: Text.PlainText
                 color: Color.muted
                 font.family: Style.font.family
                 font.pixelSize: Style.font.caption

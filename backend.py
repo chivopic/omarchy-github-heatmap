@@ -414,16 +414,24 @@ def refresh_data(username=None):
             json.dump(parsed, f, ensure_ascii=False)
         return parsed
 
-    # If both failed, return existing cache if present
+    # If both failed, use the cache only when it belongs to the requested user.
     if os.path.exists(CACHE_FILE):
         try:
             with open(CACHE_FILE, "r", encoding="utf-8") as f:
-                return json.load(f)
+                cached = json.load(f)
+            cached_username = cached.get("username")
+            if (isinstance(cached_username, str)
+                    and cached_username.casefold() == username.casefold()):
+                stale = dict(cached)
+                stale["stale"] = True
+                stale["error"] = "Failed to fetch GitHub contribution data; showing cached data"
+                return stale
         except Exception:
             pass
 
     return {
         "error": "Failed to fetch GitHub contribution data",
+        "stale": False,
         "username": username,
         "totalContributions": 0,
         "todayCount": 0,
