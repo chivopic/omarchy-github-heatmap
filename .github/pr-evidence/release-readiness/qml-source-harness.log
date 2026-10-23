@@ -1,0 +1,8 @@
+  INFO: Launching config: "/tmp/heatmap-qml-dxoqbjvw/harness.qml"
+  INFO: Shell ID: "5f7e5588483703386160bd63f9e970fe" Path ID "5f7e5588483703386160bd63f9e970fe"
+  INFO: Saving logs to "/tmp/heatmap-qml-dxoqbjvw/runtime/quickshell/by-id/b27ocnt/log.qslog"
+ ERROR quickshell.ipc: Failed to start IPC server on path "/tmp/heatmap-qml-dxoqbjvw/runtime/quickshell/by-id/b27ocnt/ipc.sock"
+  INFO: Configuration Loaded
+  WARN qml: github-heatmap: failed to parse backend output: SyntaxError: JSON.parse: Parse error
+ DEBUG qml: QtQuick source harness passed: actual BarWidget Text bindings keep img/b markup literal and Unicode labels readable
+ DEBUG qml: QtQuick source harness passed: fresh, stale-cache, backend-error, and malformed refresh outcomes
